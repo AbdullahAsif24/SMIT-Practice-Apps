@@ -1,0 +1,15 @@
+.list-group-item{
+    cursor: pointer;
+}
+
+.list-group-item:hover{
+    background-color: #f5f5f5;
+}
+
+.list-item:hover{
+    background-color: #f5f5f5;
+}
+
+.btn-div{
+    display: inline;
+}
