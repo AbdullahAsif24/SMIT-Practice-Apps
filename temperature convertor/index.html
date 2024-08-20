@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convertor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-slate-800 text-white mx-2">
+
+    <h1 class="font-bold text-3xl text-center">Temperature convertor</h1>
+
+
+    <div class="w-full max-w-sm min-w-[200px] my-4">
+        <label class="block mb-1 text-sm">
+            Enter Temperature
+        </label>
+        <input type="number"
+            class="focus:bg-purple-800 w-full h-10 bg-transparent text-sm border-purple-400 border-2 rounded px-3 py-2 transition duration-300 ease-in-out focus:outline-none focus:border-purple-600 hover:border-purple-500 shadow-sm focus:shadow-md"
+            id="input-tag"
+            placeholder="Enter Temperature" />
+    </div>
+
+   
+
+    <label for="unit-from">Select unit from</label>
+    <select class="temp-inp mb-2 text-gray-400 bg-slate-800 border-2 border-purple-800 p-1 rounded-md focus:outline-none focus:bg-purple-800 focus:text-black transition duration-300" name="unit-from" id="unit-from">
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Kelvin">Kelvin</option>
+    </select>
+
+    <label for="unit-to">to convert</label>
+    <select class="temp-inp text-gray-400 bg-slate-800 border-2 border-purple-800 p-1 rounded-md focus:outline-none focus:bg-purple-800 focus:text-black transition duration-200" name="unit-from" id="unit-to">
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit" selected>Fahrenheit</option>
+        <option value="Kelvin">Kelvin</option>
+    </select>
+
+    <br>
+
+    <button class="border-2 border-purple-800 py-1 px-2 rounded-md mt-2 hover:bg-purple-500 hover:text-black transition duration-300 ease-in-out" id="convert-btn">Convert</button>
+
+    <p class="mt-2 font-bold text-xl" id="result"></p>
+    <h1 class="font-bold text-2xl text-purple-500">History: </h1>
+    <p class="mt-2 " id="history"></p>
+    
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
